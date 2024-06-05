@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>stu info sys</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div1>
+        <logintop>
+            <p></p>
+        </logintop>
+        <login>
+            <h3> نظام معلومات الطلبة</h3>
+            <form id="loginForm" onsubmit="return validateForm()">
+                <label><input class="right" type="text" id="username">رقم الطالب :</label>
+                <label><input class="right" type="password" id="password">:كلمة المرور </label>
+                <br>
+                <input type="submit" class="b" value="دخول">
+            </form>
+        </login>
+    </div1>
+
+    <script>
+        function validateForm() {
+            
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            
+            if (username === '120220622143' && password === '2003') {
+                
+                window.location.href = 'aura.html';
+                return false; 
+            } else {
+                alert('اسم المستخدم أو كلمة المرور غير صحيحة');
+                return false; 
+            }
+        }
+    </script>
+</body>
+</html>

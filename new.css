@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(237, 238, 231);
+}
+
+div1 {
+    height: 270px;
+    width: 25%;
+    display: inline-block;
+    min-width: 25%;
+    background-color: beige;
+    border: 1px solid black;
+    padding: 1px;
+    position: absolute;
+    top: 35%; /* Center vertically and then lift up by 15% */
+    left: 50%;
+    transform: translate(-50%, -35%); /* Adjust transform to match the new top value */
+}
+
+logintop {
+    background-image: url('Screenshot 2024-06-04 222518.png');
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+login {
+    height: auto;
+    width: 100%;
+    background-color: rgb(206, 161, 106);
+}
+
+.right {
+    float: left;
+    margin-left: 24%;
+    display: inline;
+}
+
+.b {
+    background-color: rgb(50, 156, 226);
+    display: block;
+    margin: 0% auto 0% auto;
+    width: 85%;
+    height: 32px;
+    border-radius: 6%;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.b:hover {
+    background-color: rgb(115, 226, 93);
+}
+
+h3 {
+    text-align: center;
+}
